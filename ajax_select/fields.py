@@ -6,11 +6,7 @@ from django.conf import settings
 from django.contrib.contenttypes.models import ContentType
 from django.core.urlresolvers import reverse
 from django.db.models.query import QuerySet
-try:
-    from django.forms.utils import flatatt
-except ImportError:
-    # < django 1.7
-    from django.forms.util import flatatt
+from django.forms.utils import flatatt
 from django.template.loader import render_to_string
 from django.template.defaultfilters import force_escape
 from django.utils.encoding import force_text
